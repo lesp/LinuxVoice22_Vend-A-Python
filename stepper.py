@@ -74,7 +74,7 @@ def ccw(steps,delay):
         GPIO.output(IN1, False)
         time.sleep(delay)
 
-eg.msgbox(title="Welcome to the Python Quiz",image="./python.gif",msg="So you think you know Python?")
+eg.msgbox(title="Welcome to the Python Quiz",image="./python.gif",msg="So you think you know Python? Press the Green button to start")
 while True:
     if GPIO.input(button) == False:
         audio("./tilburg.mp3")
